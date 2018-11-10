@@ -4,7 +4,7 @@ SEOTitle: 崔亚东的博客 | yadong Blog
 header-img: img/home-bg.jpg
 email: yadonglives@126.com
 description: "明德厚学知行合一"
-keyword: "亚东, 崔亚东, yadong, 鬼栈, cuiyadong, @yadonglives, 亚东的博客, 崔亚东的博客, yadong Blog, 博客, 个人网站, 互联网, Java, Spring, Linux, Nginx, Web, JavaScript, 前端, 设计"
+keyword: "亚东, 崔亚东, yadong, cuiyadong, @yadonglives, 亚东的博客, 崔亚东的博客, yadong Blog, 博客, 个人网站, 互联网, Java, Spring, Linux, Nginx, Web, JavaScript, 前端, 设计"
 url: "https://cuiyadong.com"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -17,7 +17,7 @@ weibo_username:     yadonglives@126.com
 zhihu_username:     yadonglives
 github_username:    yadonglives
 twitter_username:   yadonglives@126.com
-#facebook_username:  huxpro
+#facebook_username:  yadonglives@126.com
 #linkedin_username:  firstname-lastname-idxxxx
 
 
