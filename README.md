@@ -221,18 +221,6 @@ Friends can also live without enable sidebar, also be displayed in the bottom wh
 You can just add your friends information in `_config.yml` with a familiar JSON syntax and everything is done, very easy:
 
 ```
-# Friends
-friends: [
-    {
-        title: "Foo Blog",
-        href: "http://foo.github.io/"
-    },
-    {
-        title: "Bar Blog",
-        href: "http://bar.github.io"
-    }
-]
-```
 
 
 #### Keynote Layout
