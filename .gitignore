@@ -1,3 +1,9 @@
+/.project
+.idea
+.project
+bin/*
+*.iml
+*/*.iml
 _site
 node_modules
 npm-debug.log
