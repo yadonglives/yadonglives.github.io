@@ -2,7 +2,7 @@
 layout: post
 title: "Elasticsearch安装"
 subtitle: 'centos7.2 x64，Elasticsearch安装'
-author: "Yadong"
+author: "YaDong"
 header-img: "img/post-bg-alitrip.jpg"
 tags:
     - Elasticsearch
