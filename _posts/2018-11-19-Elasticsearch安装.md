@@ -84,6 +84,7 @@ tags:
     useradd  es -g elasticsearch -p es
 
  - 授权访问组
+
     chown -R es:elasticsearch /opt/elasticsearch
 
  - 启动
