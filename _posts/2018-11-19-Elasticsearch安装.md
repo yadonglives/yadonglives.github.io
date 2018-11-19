@@ -79,8 +79,9 @@ tags:
 
  - 创建新用户
 
+> useradd 用户名 -g 组名 -p 密码
+
     groupadd elasticsearch
-    # useradd 用户名 -g 组名 -p 密码
     useradd  es -g elasticsearch -p es
 
  - 授权访问组
