@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "Elasticsearch安装"
 subtitle: 'centos7.2 x64，Elasticsearch安装'
@@ -24,22 +24,24 @@ tags:
 
 ### 2. 安装 ###
 
- 1. java8安装
+** java8安装**
 >    点击查看[[java8安装]][2]。
 
- 2. elasticsearch安装
+**elasticsearch安装**
 将  elasticsearch-6.5.0.tar.gz 上传到服务器
 
 
     tar -zxvf elasticsearch-6.5.0.tar.gz
+
     mv elasticsearch-6.5.0 /opt/elasticsearch
     cd /opt/elasticsearch/bin/
 
- 3. 修改配置
+**修改配置**
 
     vim config/elasticsearch.yml
  
- - 修改内容(没有就添加):
+
+> 修改内容(没有就添加):
 
     cluster.name: my-application
     node.name: node-1
@@ -52,7 +54,7 @@ tags:
     bootstrap.system_call_filter: false
 
  
- - 修改/etc/sysctl.conf，在文件最后面添加内容:
+**修改/etc/sysctl.conf，在文件最后面添加内容:**
 
     vim /etc/sysctl.conf
     vm.max_map_count=262144
@@ -61,11 +63,13 @@ tags:
 
     sysctl -p
 
- - 修改文件/etc/security/limits.conf
+**修改文件/etc/security/limits.conf**
+
 
     vim /etc/security/limits.conf
 
-  添加如下内容：
+
+> 添加如下内容：
 
     * soft nproc 2048
     * hard nproc 4096
@@ -77,18 +81,19 @@ tags:
 这是因为处于系统安装考虑的设置，由于Elasticsearch可以接收用户输入的脚本并且执行，为了系统安全考虑，不允许root账号启动，所以建议给Elasticsearch单独创建一个用户来运行Elasticsearch。
 
 
- - 创建新用户
+**创建新用户**
 
 > useradd 用户名 -g 组名 -p 密码
 
     groupadd elasticsearch
     useradd  es -g elasticsearch -p es
 
- - 授权访问组
+**授权访问组**
 
     chown -R es:elasticsearch /opt/elasticsearch
 
- - 启动
+**启动**
+
 
     ./bin/elasticsearch
 
