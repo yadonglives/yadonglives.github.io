@@ -24,11 +24,12 @@ tags:
 
 ### 2. 安装 ###
 
-** java8安装**
+**java8安装**
 >    点击查看[[java8安装]][2]。
 
 **elasticsearch安装**
-将  elasticsearch-6.5.0.tar.gz 上传到服务器
+
+> 将  elasticsearch-6.5.0.tar.gz 上传到服务器
 
 
     tar -zxvf elasticsearch-6.5.0.tar.gz
@@ -97,28 +98,6 @@ tags:
 
     ./bin/elasticsearch
 
-
-
-<table class="table table-bordered table-striped table-condensed">
-	<thead>
-	 <tr>
-        <th>北京</th>
-    <th>雾霾</th>
-    </tr>
-	</thead>
-    <tr>
-        <td>北京</td>
-    <td>雾霾</td>
-    </tr>
-    <tr>
-        <td>深圳</td>
-    <td>暴雨</td>
-    </tr>
-    <tr>
-        <td>深圳</td>
-    <td>暴雨</td>
-    </tr>
-</table>
 
   [1]: https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.5.0.tar.gz
   [2]: https://www.cuiyadong.com/2018/11/19/jdk1.8-linux/
