@@ -100,6 +100,12 @@ tags:
 
 
 <table class="table table-bordered table-striped table-condensed">
+	<thead>
+	 <tr>
+        <th>北京</th>
+    <th>雾霾</th>
+    </tr>
+	</thead>
     <tr>
         <td>北京</td>
     <td>雾霾</td>
