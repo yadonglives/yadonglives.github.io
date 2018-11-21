@@ -98,15 +98,14 @@ tags:
     ./bin/elasticsearch
 
 
-```python
-@requires_authorization
-class SomeClass:
-    pass
+    python
+    @requires_authorization
+    class SomeClass:
+        pass
 
-if __name__ == '__main__':
-    # A comment
-    print 'hello world'
-```
+    if __name__ == '__main__':
+        # A comment
+        print 'hello world'
 
   [1]: https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.5.0.tar.gz
   [2]: https://www.cuiyadong.com/2018/11/19/jdk1.8-linux/
