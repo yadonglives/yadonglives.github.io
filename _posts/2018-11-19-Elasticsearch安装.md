@@ -6,6 +6,7 @@ author: "Yadong"
 header-img: "img/post-bg-alitrip.jpg"
 tags:
     - Elasticsearch
+    - linux
 ---
 
 ## 安装 ##
