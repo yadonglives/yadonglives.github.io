@@ -98,18 +98,17 @@ tags:
     ./bin/elasticsearch
 
 
-```flow
-st=>start: Start:>https://www.zybuluo.com
-io=>inputoutput: verification
-op=>operation: Your Operation
-cond=>condition: Yes or No?
-sub=>subroutine: Your Subroutine
-e=>end
 
-st->io->op->cond
-cond(yes)->e
-cond(no)->sub->io
-```
+<table class="table table-bordered table-striped table-condensed">
+    <tr>
+        <td>北京</td>
+    <td>雾霾</td>
+    </tr>
+    <tr>
+        <td>深圳</td>
+    <td>暴雨</td>
+    </tr>
+</table>
 
   [1]: https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.5.0.tar.gz
   [2]: https://www.cuiyadong.com/2018/11/19/jdk1.8-linux/
