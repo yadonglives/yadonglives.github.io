@@ -9,25 +9,25 @@ tags:
     - linux
 ---
 
-## 安装 ##
+# 单节点安装 #
 
 
 ----------
 
 
-### 1. 准备 ###
+## 1. 准备 ##
 
  - Elastic 需要 Java 8 环境 
  - 此次Elasticsearch使用版本为6.5.0，点击[[下载链接]][1]。
 
 
 
-### 2. 安装 ###
+## 2. 安装 ##
 
-**java8安装**
+### java8安装 ###
 >    点击查看[[java8安装]][2]。
 
-**elasticsearch安装**
+### elasticsearch安装 ###
 将  elasticsearch-6.5.0.tar.gz 上传到服务器
 
 
@@ -36,9 +36,9 @@ tags:
     mv elasticsearch-6.5.1 /opt/elasticsearch
     cd /opt/elasticsearch/bin/
 
-**修改配置**
+### 修改配置 ###
 
-    vim config/elasticsearch.yml
+    vi config/elasticsearch.yml
  
 
 > 修改内容(没有就添加):
@@ -87,18 +87,18 @@ tags:
 这是因为处于系统安装考虑的设置，由于Elasticsearch可以接收用户输入的脚本并且执行，为了系统安全考虑，不允许root账号启动，所以建议给Elasticsearch单独创建一个用户来运行Elasticsearch。
 
 
-**创建新用户**
+### 创建新用户 ###
 
 > useradd 用户名 -g 组名 -p 密码
 
     groupadd elasticsearch
     useradd  es -g elasticsearch -p es
 
-**授权访问组**
+### 授权访问组 ###
 
     chown -R es:elasticsearch /opt/elasticsearch
 
-**启动**
+### 启动 ###
 
 
     ./bin/elasticsearch
