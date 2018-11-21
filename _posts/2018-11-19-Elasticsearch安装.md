@@ -98,8 +98,14 @@ tags:
     ./bin/elasticsearch
 
 
-```
-cd /opt
+```python
+@requires_authorization
+class SomeClass:
+    pass
+
+if __name__ == '__main__':
+    # A comment
+    print 'hello world'
 ```
 
   [1]: https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.5.0.tar.gz
