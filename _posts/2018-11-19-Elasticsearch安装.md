@@ -98,14 +98,18 @@ tags:
     ./bin/elasticsearch
 
 
-    python
-    @requires_authorization
-    class SomeClass:
-        pass
+```flow
+st=>start: Start:>https://www.zybuluo.com
+io=>inputoutput: verification
+op=>operation: Your Operation
+cond=>condition: Yes or No?
+sub=>subroutine: Your Subroutine
+e=>end
 
-    if __name__ == '__main__':
-        # A comment
-        print 'hello world'
+st->io->op->cond
+cond(yes)->e
+cond(no)->sub->io
+```
 
   [1]: https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.5.0.tar.gz
   [2]: https://www.cuiyadong.com/2018/11/19/jdk1.8-linux/
