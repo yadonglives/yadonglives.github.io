@@ -108,6 +108,10 @@ tags:
         <td>深圳</td>
     <td>暴雨</td>
     </tr>
+    <tr>
+        <td>深圳</td>
+    <td>暴雨</td>
+    </tr>
 </table>
 
   [1]: https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.5.0.tar.gz
