@@ -2,7 +2,7 @@
 layout: post
 title: "Elasticsearch安装"
 subtitle: 'centos7.2 x64，Elasticsearch安装'
-author: "YaDong"
+author: "Yadong"
 header-img: "img/post-bg-alitrip.jpg"
 tags:
     - Elasticsearch
@@ -19,7 +19,6 @@ tags:
  - Elastic 需要 Java 8 环境 
  - 此次Elasticsearch使用版本为6.5.0，点击[[下载链接]][1]。
 
-----------
 
 
 ### 2. 安装 ###
@@ -28,13 +27,12 @@ tags:
 >    点击查看[[java8安装]][2]。
 
 **elasticsearch安装**
+将  elasticsearch-6.5.0.tar.gz 上传到服务器
 
-> 将  elasticsearch-6.5.0.tar.gz 上传到服务器
 
+    tar -zxvf elasticsearch-6.5.1.tar.gz
 
-    tar -zxvf elasticsearch-6.5.0.tar.gz
-
-    mv elasticsearch-6.5.0 /opt/elasticsearch
+    mv elasticsearch-6.5.1 /opt/elasticsearch
     cd /opt/elasticsearch/bin/
 
 **修改配置**
@@ -49,7 +47,8 @@ tags:
     network.host: 0.0.0.0
     http.port: 9200
 
-> CentOS6配置：因为Centos6不支持SecComp,而ES默认bootstrap.system_call_filter为true进行检测，需要将其关闭。
+> **CentOS6配置：
+因为Centos6不支持SecComp,而ES默认bootstrap.system_call_filter为true进行检测，需要将其关闭**。
 
     bootstrap.memory_lock: false
     bootstrap.system_call_filter: false
@@ -66,12 +65,17 @@ tags:
 
 **修改文件/etc/security/limits.conf**
 
+> 用户最大可创建文件数太小，启动会报异常。
+
 
     vim /etc/security/limits.conf
 
 
 > 添加如下内容：
 
+    * soft nofile 65536
+    * hard nofile 131072
+    
     * soft nproc 2048
     * hard nproc 4096
 
@@ -97,6 +101,7 @@ tags:
 
 
     ./bin/elasticsearch
+
 
 
   [1]: https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.5.0.tar.gz
