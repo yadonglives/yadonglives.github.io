@@ -37,13 +37,15 @@ gzip_vary on;
 
 # 配置注释 #
 
-**gzip on|off**
+**gzip**
 
+gzip on|off
 默认值: gzip off 
 开启或者关闭gzip模块
 
-**gzip_static on|off**
+**gzip_static**
 
+gzip_static on|off
 nginx对于静态文件的处理模块
 该模块可以读取预先压缩的gz文件，这样可以减少每次请求进行gzip压缩的CPU资源消耗。该模块启用后，nginx首先检查是否存在请求静态文件的gz结尾的文件，如果有则直接返回该gz文件内容。为了要兼容不支持gzip的浏览器，启用gzip_static模块就必须同时保留原始静态文件和gz文件。这样的话，在有大量静态文件的情况下，将会大大增加磁盘空间。我们可以利用nginx的反向代理功能实现只保留gz文件。可以百度"nginx gzip_static"了解更多
 
