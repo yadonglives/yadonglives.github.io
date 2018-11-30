@@ -1,7 +1,7 @@
 {
   "name": "Yadong Blog",
   "short_name": "Yadong Blog",
-  "description": "About an engineer & designer who loves web.",
+  "description": "My Blog.",
   "icons": [{
     "src": "icons/128.png",
     "sizes": "128x128",
