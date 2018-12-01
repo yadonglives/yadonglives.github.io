@@ -6,6 +6,7 @@ keyword: 'Nginx，Gzip, nginx gzip 配置, 压缩, Nginx开启Gzip压缩'
 author: "Yadong"
 header-img: "img/post-bg-swordsman.jpg"
 header-color: "#ef9811"
+header-color-hover: "#0085a1"
 tags:
     - Nginx
 ---
