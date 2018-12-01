@@ -175,14 +175,17 @@ layout: default
 {% endif %}
 {% if page.header-color %}
 <style type="text/css">
-        
-    .navbar-custom .nav li a{
-        color: {{page.header-color}};
-        padding: 20px;
+    
+    @media only screen and (min-width: 768px){
+        .navbar-custom .nav li a{
+            color: {{page.header-color}};
+            padding: 20px;
+        }
+        .navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus {
+            color: {{page.header-color-hover}};
+        }    
     }
-    .navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus {
-        color: {{page.header-color-hover}};
-    }
+    
 
 </style>
 {% endif %}
