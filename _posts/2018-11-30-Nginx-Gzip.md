@@ -4,7 +4,7 @@ title: "Nginx开启Gzip压缩"
 subtitle: 'Nginx，Gzip, 压缩, Nginx开启Gzip压缩'
 keyword: 'Nginx，Gzip, nginx gzip 配置, 压缩, Nginx开启Gzip压缩'
 author: "Yadong"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/post-bg-swordsman.jpg"
 tags:
     - Nginx
 ---
