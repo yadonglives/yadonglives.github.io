@@ -41,7 +41,7 @@ gzip_vary on;
 
 **gzip**
 
-gzip on|off
+gzip on\|off
 
 默认值: gzip off 
 开启或者关闭gzip模块
