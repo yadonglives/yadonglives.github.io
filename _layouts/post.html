@@ -84,27 +84,7 @@ layout: default
             </div>
         {% endif %}
 
-            <!-- Sidebar Container -->
-            <div class="
-                col-lg-10 col-lg-offset-2
-                col-md-12 col-md-offset-1
-                sidebar-container">
-
-                <!-- Featured Tags -->
-                {% include featured-tags.html bottom=true %}
-
-            </div>
-        </div>        
-
-    </div>
-</article>
-
-<!-- add support for mathjax by voleking-->
-{% if page.mathjax %}
-  {% include mathjax_support.html %}
-{% endif %}
-
-{% if site.gittalk.clientID %}
+        {% if site.gittalk.clientID %}
         
                 <!-- Link Gitalk 的支持文件  -->
                 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
@@ -126,6 +106,28 @@ layout: default
                 <!-- Gitalk end -->
         
         {% endif %}
+
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-10 col-lg-offset-2
+                col-md-12 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                {% include featured-tags.html bottom=true %}
+
+            </div>
+        </div>        
+
+    </div>
+</article>
+
+<!-- add support for mathjax by voleking-->
+{% if page.mathjax %}
+  {% include mathjax_support.html %}
+{% endif %}
+
+
 
 
 {% if site.disqus_username %}
