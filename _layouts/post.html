@@ -94,39 +94,37 @@ layout: default
                 {% include featured-tags.html bottom=true %}
 
             </div>
-
-            
-
         </div>
 
 
         {% if site.gittalk.clientID %}
-        <div class="
-                col-lg-10 col-lg-offset-2
-                col-md-12 col-md-offset-1
-                sidebar-container">
-            <!-- Link Gitalk 的支持文件  -->
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-            <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
-            <div id="gitalk-container"></div>     <script type="text/javascript">
-                var gitalk = new Gitalk({
+        <div class="row">
+            <div class="
+                    col-lg-10 col-lg-offset-2
+                    col-md-12 col-md-offset-1
+                    sidebar-container">
+                <!-- Link Gitalk 的支持文件  -->
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+                <div id="gitalk-container"></div>     <script type="text/javascript">
+                    var gitalk = new Gitalk({
 
-                // gitalk的主要参数
-                    clientID: '{{site.gittalk.clientID}}',
-                    clientSecret: '{{site.gittalk.clientSecret}}',
-                    repo: '{{site.gittalk.repo}}',
-                    owner: '{{site.gittalk.owner}}',
-                    admin: ['{{site.gittalk.admin}}'],
-                    id:window.location.pathname,
+                    // gitalk的主要参数
+                        clientID: '{{site.gittalk.clientID}}',
+                        clientSecret: '{{site.gittalk.clientSecret}}',
+                        repo: '{{site.gittalk.repo}}',
+                        owner: '{{site.gittalk.owner}}',
+                        admin: ['{{site.gittalk.admin}}'],
+                        id:window.location.pathname,
 
-                });
-                gitalk.render('gitalk-container');
-            </script> 
-            <!-- Gitalk end -->
+                    });
+                    gitalk.render('gitalk-container');
+                </script> 
+                <!-- Gitalk end -->
+            </div>
         </div>
-
         {% endif %}
-        
+
     </div>
 </article>
 
