@@ -7,6 +7,7 @@ author: "Yadong"
 header-img: "img/post-bg-swordsman.jpg"
 header-color: "#ef9811"
 header-color-hover: "#0085a1"
+changyansid: 20181130-nginx-gzip
 tags:
     - Nginx
 ---

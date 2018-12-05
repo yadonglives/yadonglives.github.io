@@ -5,6 +5,7 @@ subtitle: 'centos7.2 x64，Elasticsearch安装'
 keyword: 'Elasticsearch, Elasticsearch教程, Elasticsearch安装, Elasticsearch api 中文文档, Elasticsearch 查询, Java, Spring, Linux, Nginx, Zookeeper, Web, JavaScript, 前端, 设计'
 author: "Yadong"
 header-img: "img/post-bg-alitrip.jpg"
+changyansid: 20181119-elastic-install
 tags:
     - Elasticsearch
     - linux
