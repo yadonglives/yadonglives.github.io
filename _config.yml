@@ -35,7 +35,9 @@ baidu-site-verification: MZ7hXYjGrf
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
 #timezone: CN  
 
-
+# changyan
+changyan_appId: cytX4TRrq
+changyan_conf: prod_ed21a114a80b5621ceb9697d741af641
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
