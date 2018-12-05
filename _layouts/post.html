@@ -94,10 +94,17 @@ layout: default
                 {% include featured-tags.html bottom=true %}
 
             </div>
-        </div>
+        </div>        
 
+    </div>
+</article>
 
-        {% if site.gittalk.clientID %}
+<!-- add support for mathjax by voleking-->
+{% if page.mathjax %}
+  {% include mathjax_support.html %}
+{% endif %}
+
+{% if site.gittalk.clientID %}
         <div class="row">
             <div class="
                     col-lg-10 col-lg-offset-2
@@ -124,15 +131,6 @@ layout: default
             </div>
         </div>
         {% endif %}
-
-    </div>
-</article>
-
-<!-- add support for mathjax by voleking-->
-{% if page.mathjax %}
-  {% include mathjax_support.html %}
-{% endif %}
-
 
 
 {% if site.disqus_username %}
