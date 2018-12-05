@@ -35,9 +35,13 @@ baidu-site-verification: MZ7hXYjGrf
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
 #timezone: CN  
 
-# changyan
-changyan_appId: cytX4TRrq
-changyan_conf: prod_ed21a114a80b5621ceb9697d741af641
+# gittalk
+gittalk:
+  clientID: ee91fa542ea907e46b92
+  clientSecret: b506d700c2b03ab9821663e5aacb3f3c58fa8531
+  repo: https://github.com/yadonglives/yadonglives.github.io
+  owner: yadonglives
+  admin: yadonglives
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
