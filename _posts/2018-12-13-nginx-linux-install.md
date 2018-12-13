@@ -31,13 +31,16 @@ yum install -y gcc gdb strace gcc-c++ autoconf libjpeg libjpeg-devel libpng libp
 ```
 
 
+
 2. **安装PCRE库**
+
 ```shell
 tar -zxvf pcre-8.36.tar.gz
 cd pcre-8.36
 ./configure
 make && make install
 ```
+
 
 
 3. **安装SSL库**
@@ -47,6 +50,7 @@ cd openssl-1.0.1j
 ./config
 make && make install
 ```
+
 
 
 4. **安装nginx**
@@ -61,11 +65,13 @@ make && make install
 **注**: --with-http_ssl_module:这个不加后面在nginx.conf配置ssl:on后,启动会报nginx: [emerg] unknown directive "ssl" in /opt/nginx/conf/nginx.conf 异常)
 
 
+
 #常见问题#
-1. 启动时报错：
+**启动时报错：**
 ```shell
 ./nginx: error while loading shared libraries: libpcre.so.1: cannot open shared object file: No such file or directory
 ```
+
 解决办法：
 
 执行命令
