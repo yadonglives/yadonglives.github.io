@@ -12,11 +12,13 @@ tags:
 Nginx是一款轻量级的网页服务器、反向代理服务器。相较于Apache、lighttpd具有占有内存少，稳定性高等优势。它最常的用途是提供反向代理服务。
 
 # 安装 #
-  在Centos下，yum源不提供nginx的安装，可以通过切换yum源的方法获取安装。也可以通过直接下载安装包的方法，
-  以下命令均需root权限执行：首先安装必要的库（nginx 中gzip模块需要 zlib 库，rewrite模块需要 pcre 库，ssl 功能需要openssl库）。
-  选定/usr/local为安装目录，以下具体版本号根据实际改变。
+>   在Centos下，yum源不提供nginx的安装，可以通过切换yum源的方法获取安装。也可以通过直接下载安装包的方法，
+>   以下命令均需root权限执行：首先安装必要的库（nginx 中gzip模块需要 zlib 库，rewrite模块需要 pcre 库，ssl 功能需要openssl库）。
+>   选定/usr/local为安装目录，以下具体版本号根据实际改变。
 
-1. **安装前的准备**
+
+
+## 安装前的准备 ##
 
 - pcre，本次版本为：pcre-8.37，该文件为正则表达式库。让nginx支持rewrite需要安装这个库，[点击下载][4]
 
@@ -32,7 +34,8 @@ yum install -y gcc gdb strace gcc-c++ autoconf libjpeg libjpeg-devel libpng libp
 
 
 
-2. **安装PCRE库**
+
+## 安装PCRE库 ##
 
 ```shell
 tar -zxvf pcre-8.36.tar.gz
@@ -43,7 +46,7 @@ make && make install
 
 
 
-3. **安装SSL库**
+## 安装SSL库 ##
 ```shell
 tar -zxvf openssl-1.0.1j.tar.gz
 cd openssl-1.0.1j
@@ -53,7 +56,7 @@ make && make install
 
 
 
-4. **安装nginx**
+## 安装nginx ##
 
 ```shell
 tar -zxvf nginx-1.14.2.tar.gz 
@@ -66,8 +69,9 @@ make && make install
 
 
 
-#常见问题#
-**启动时报错：**
+# 常见问题 #
+
+## 启动时报错 ##
 ```shell
 ./nginx: error while loading shared libraries: libpcre.so.1: cannot open shared object file: No such file or directory
 ```
