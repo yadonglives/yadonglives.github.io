@@ -17,7 +17,8 @@ Nginx是一款轻量级的网页服务器、反向代理服务器。相较于Apa
   选定/usr/local为安装目录，以下具体版本号根据实际改变。
 
 1. **安装前的准备**
-- pcre。本次版本为：pcre-8.37，该文件为正则表达式库。让nginx支持rewrite需要安装这个库，[点击下载][4]
+
+- pcre，本次版本为：pcre-8.37，该文件为正则表达式库。让nginx支持rewrite需要安装这个库，[点击下载][4]
 
 - openssl，本次下载版本使用1.0.1j，[点次下载][1]，
 
@@ -29,8 +30,8 @@ Nginx是一款轻量级的网页服务器、反向代理服务器。相较于Apa
 yum install -y gcc gdb strace gcc-c++ autoconf libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel libxml2 libxml2-devel zlib zlib-devel glibc glibc-devel glib2 glib2-devel bzip2 bzip2-devel ncurses ncurses-devel curl curl-devel e2fsprogs patch e2fsprogs-devel krb5-devel libidn libidn-devel openldap-devel nss_ldap openldap-clients openldap-servers libevent-devel libevent uuid-devel uuid mysql-devel    
 ```
 
-2. **安装PCRE库**
 
+2. **安装PCRE库**
 ```shell
 tar -zxvf pcre-8.36.tar.gz
 cd pcre-8.36
@@ -38,8 +39,8 @@ cd pcre-8.36
 make && make install
 ```
 
-3. **安装SSL库**
 
+3. **安装SSL库**
 ```shell
 tar -zxvf openssl-1.0.1j.tar.gz
 cd openssl-1.0.1j
@@ -47,7 +48,9 @@ cd openssl-1.0.1j
 make && make install
 ```
 
+
 4. **安装nginx**
+
 ```shell
 tar -zxvf nginx-1.14.2.tar.gz 
 cd nginx-1.14.2
