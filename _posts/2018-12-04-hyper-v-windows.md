@@ -7,7 +7,6 @@ author: "Yadong"
 header-img: "img/post-bg-swordsman.jpg"
 header-color: "#ef9811"
 header-color-hover: "#0085a1"
-changyan-sid: 20181204-hyper-v-install
 tags:
     - Hyper-V
     - Windows10
