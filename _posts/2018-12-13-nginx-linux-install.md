@@ -18,7 +18,7 @@ Nginx是一款轻量级的网页服务器、反向代理服务器。相较于Apa
 
 
 
-## 安装前的准备 ##
+### 安装前的准备 ###
 
 - pcre，本次版本为：pcre-8.37，该文件为正则表达式库。让nginx支持rewrite需要安装这个库，[点击下载][4]
 
@@ -35,7 +35,7 @@ yum install -y gcc gdb strace gcc-c++ autoconf libjpeg libjpeg-devel libpng libp
 
 
 
-## 安装PCRE库 ##
+### 安装PCRE库 ###
 
 ```shell
 tar -zxvf pcre-8.36.tar.gz
@@ -46,7 +46,7 @@ make && make install
 
 
 
-## 安装SSL库 ##
+### 安装SSL库 ###
 ```shell
 tar -zxvf openssl-1.0.1j.tar.gz
 cd openssl-1.0.1j
@@ -56,7 +56,7 @@ make && make install
 
 
 
-## 安装nginx ##
+### 安装nginx ###
 
 ```shell
 tar -zxvf nginx-1.14.2.tar.gz 
@@ -71,14 +71,12 @@ make && make install
 
 # 常见问题 #
 
-## 启动时报错 ##
+### 启动时报错 ###
 ```shell
 ./nginx: error while loading shared libraries: libpcre.so.1: cannot open shared object file: No such file or directory
 ```
 
-解决办法：
-
-执行命令
+执行命令，查看缺少到文件
 ```shell
 ldd $(which /usr/local/nginx/sbin/nginx)
 ```
