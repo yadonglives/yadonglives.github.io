@@ -38,8 +38,8 @@ yum install -y gcc gdb strace gcc-c++ autoconf libjpeg libjpeg-devel libpng libp
 ### 安装PCRE库 ###
 
 ```shell
-tar -zxvf pcre-8.36.tar.gz
-cd pcre-8.36
+tar -zxvf pcre-8.37.tar.gz
+cd pcre-8.37
 ./configure
 make && make install
 ```
