@@ -20,7 +20,7 @@ Nginx是一款轻量级的网页服务器、反向代理服务器。相较于Apa
 
 ### 安装前的准备 ###
 
-- pcre，本次版本为：pcre-8.37，该文件为正则表达式库。让nginx支持rewrite需要安装这个库，[点击下载][4]
+- pcre，本次版本为：pcre-8.37。该文件为正则表达式库。让nginx支持rewrite需要安装这个库，[点击下载][4]
 
 - openssl，本次下载版本使用1.0.1j，[点次下载][1]，
 
@@ -38,8 +38,8 @@ yum install -y gcc gdb strace gcc-c++ autoconf libjpeg libjpeg-devel libpng libp
 ### 安装PCRE库 ###
 
 ```shell
-tar -zxvf pcre-8.36.tar.gz
-cd pcre-8.36
+tar -zxvf pcre-8.37.tar.gz
+cd pcre-8.37
 ./configure
 make && make install
 ```
