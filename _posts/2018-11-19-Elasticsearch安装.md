@@ -18,7 +18,7 @@ tags:
 
 ## 1. 准备 ##
 
- - Elastic 需要 Java 8 环境 
+ - Elastic 需要 Java 8 环境。
  - 此次Elasticsearch使用版本为6.5.0，点击[[下载链接]][1]。
 
 
